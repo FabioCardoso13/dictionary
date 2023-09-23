@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+
+:root{
+    background-color: rgb(18, 15, 15);
+}
+
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 3rem;
+    letter-spacing: 0.9px;
+    background: linear-gradient(
+      90deg,
+      rgba(249, 211, 180, 1) 0%,
+      rgba(249, 211, 180, 0.1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
+
+.search{
+    margin-top: 5%;
+    width: 50%;
+    background-color: rgb(15, 12, 12);
+    border-radius: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0.5rem 1rem;
+    box-shadow: 5px 5px 7px #1c1414, -5px -5px 7px hsl(0, 16%, 11%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.search:hover{
+    transform: scale(1.05, 1.05);
+}
+
+.search input{
+    background-color: rgb(15, 12, 12);
+    flex: 1;
+    color: rgba(249, 211, 180, 0.7);
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.search img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.search img:hover{
+    transform: scale(1.2, 1.2);
+}
